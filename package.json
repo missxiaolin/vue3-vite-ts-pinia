@@ -6,14 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install",
+		"commit": "lint-staged"
   },
-  "husky": {
-		"hooks": {
-			"pre-commit": "npm run commit",
-			"commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
-		}
-	},
+  
   "dependencies": {
     "ant-design-vue": "4.2.3",
     "autoprefixer": "^10.4.20",
@@ -23,6 +20,16 @@
     "vue": "^3.4.37",
     "vue-router": "^4.4.3"
   },
+  "husky": {
+		"hooks": {
+			"pre-commit": "npm run commit",
+			"commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+		}
+	},
+	"lint-staged": {
+		"*.md": "prettier --write",
+		"*.{ts,tsx,js,vue,scss}": "prettier --write"
+	},
   "devDependencies": {
     "@commitlint/cli": "^19.4.1",
     "@commitlint/config-conventional": "^19.4.1",
@@ -35,5 +42,6 @@
     "vite": "^5.4.1",
     "vite-plugin-compression": "^0.5.1",
     "vue-tsc": "^2.0.29"
-  }
+  },
+  
 }
