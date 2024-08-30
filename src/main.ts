@@ -1,7 +1,11 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "@/router";
+import store from "@/store";
+import "babel-polyfill";
 
-import './assets/css/tailwind.css'
+const app = createApp(App);
+app.use(store);
+app.use(router);
 
-createApp(App).mount('#app')
+app.mount("#app");

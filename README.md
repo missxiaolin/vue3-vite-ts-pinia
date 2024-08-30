@@ -1,5 +1,113 @@
-# Vue 3 + TypeScript + Vite
+# Vue 3 + Typescript + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+该项目使用 Vue 3 和 Vite 中的 Typescript 进行开发。该模板使用 Vue 3`<script setup lang="ts">`SFCs，请查看[script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-脚本设置）了解更多信息。
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 推荐的 IDE 设置
+
+- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+
+## 准备
+
+- `Node`: 版本建议 >= 12.0.0 [下载链接](https://nodejs.org/zh-cn/download/)
+- `Git`: [版本管理工具](https://www.git-scm.com/download)
+- `Visual Studio Code`: [最新版本](https://code.visualstudio.com/Download/)
+  - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) - vue 开发必备
+  - [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)- 脚本代码检查
+  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - 代码格式化
+  - [Stylelin](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) - css 格式化
+  - [ni](https://github.com/antfu/ni) - 依赖管理
+
+## 打开 VSCode，安装以下插件：
+
+- eslint
+- stylelint
+- volar
+
+## 安装使用
+
+- 获取代码
+
+```sh
+git clone xxx
+```
+
+- 安装依赖
+
+```sh
+ni install
+```
+
+- 运行
+
+```sh
+ni serve
+```
+
+- 打包
+
+```sh
+ni build
+```
+
+- 本地预览
+
+```sh
+ni preview
+```
+
+- 打包/预览
+
+```sh
+ni build:preview
+```
+
+## cdn 图片、图标管理
+
+通过[附件上传](https://eboss.enmonster.com/fls/myUpload)中的覆盖上传
+上传管理：
+三字码: rsm
+文件名: static/文件名.格式
+示例：https://static.enmonster.com/rsm/static/user-bg.png
+
+## 打开 VSCode 配置文件（Mac command + shift + p，windows ctrl + shift + p，输入 settings）。
+
+> 注意，有些依赖版本对不上的时候，会造成格式化失败。例如 eslint 插件使用 8.0 版本以上格式化就报错，后来使用的是 7.0 的版本
+
+```js
+    // prettier-自动格式化代码
+    "editor.formatOnSave": false,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
+    "[vue]": {
+        "editor.formatOnSave": true
+    },
+    // prettier-使用单引号
+    "prettier.singleQuote": false,
+    // prettier-不要分号
+    "prettier.semi": false,
+    // prettier- (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
+    "prettier.arrowParens": "avoid",
+    //  prettier-在对象，数组括号与文字之间加空格 "{ foo: bar }"
+    "prettier.bracketSpacing": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript"
+    ],
+    "eslint.alwaysShowStatus": true,
+    "stylelint.validate": [
+        "css",
+        "less",
+        "postcss",
+        "scss",
+        "vue",
+        "sass"
+    ],
+```
