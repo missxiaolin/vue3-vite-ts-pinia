@@ -55,7 +55,6 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
 					externalGlobals({
 						// vue: 'Vue',
 						// moment: "moment",
-						// "eui-plus": "eui-plus",
 						// "micro-app": "micro-app",
 					}),
 				],

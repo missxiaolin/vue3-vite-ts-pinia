@@ -14,7 +14,6 @@ module.exports = defineConfig({
 	// https://eslint.bootcss.com/docs/user-guide/configuring#specifying-globals
 	globals: {
 		Nullable: true,
-		// eui: readonly
 	},
 	extends: [
 		"vue-global-api",
