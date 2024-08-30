@@ -61,14 +61,6 @@ ni preview
 ni build:preview
 ```
 
-## cdn 图片、图标管理
-
-通过[附件上传](https://eboss.enmonster.com/fls/myUpload)中的覆盖上传
-上传管理：
-三字码: rsm
-文件名: static/文件名.格式
-示例：https://static.enmonster.com/rsm/static/user-bg.png
-
 ## 打开 VSCode 配置文件（Mac command + shift + p，windows ctrl + shift + p，输入 settings）。
 
 > 注意，有些依赖版本对不上的时候，会造成格式化失败。例如 eslint 插件使用 8.0 版本以上格式化就报错，后来使用的是 7.0 的版本
