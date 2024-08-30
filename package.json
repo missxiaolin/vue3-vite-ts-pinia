@@ -1,5 +1,5 @@
 {
-	"name": "rsm-ui",
+	"name": "web",
 	"version": "1.0.0",
 	"scripts": {
 		"serve": "vite --force",
