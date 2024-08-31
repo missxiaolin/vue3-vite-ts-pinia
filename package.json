@@ -23,6 +23,7 @@
 		"*.{ts,tsx,js,vue,scss}": "prettier --write"
 	},
 	"dependencies": {
+		"ant-design-vue": "4.2.3",
 		"autoprefixer": "^10.4.20",
 		"axios": "^0.24.0",
 		"babel-polyfill": "^6.26.0",
