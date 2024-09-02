@@ -17,7 +17,7 @@ export const cdnhtml = (mode: string) => {
 				// cdn 配置
 				cdn: {
 					css: [],
-					// js: [`https://localhost:8888/cdnChitu.js`],
+					// js: [`https://localhost:8888/cdn.js`],
 					js: [``],
 				},
 				// BASE_URL: BASE_URL,
