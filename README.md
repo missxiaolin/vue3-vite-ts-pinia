@@ -104,6 +104,10 @@ ni build:preview
     ],
 ```
 
+### VueUse 官网
+
+https://vueuse.nodejs.cn/core/onClickOutside/
+
 ### tailwindcss 原子化 css
 
 https://tailwind.nodejs.cn/
